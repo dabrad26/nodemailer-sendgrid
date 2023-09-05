@@ -1,21 +1,26 @@
 {
-    "name": "nodemailer-sendgrid",
-    "version": "1.0.3",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "grunt"
-    },
-    "keywords": ["nodemailer", "sendgrid"],
-    "author": "Andris Reinman",
-    "license": "MIT",
-    "dependencies": {
-        "@sendgrid/mail": "^6.2.1"
-    },
-    "devDependencies": {
-        "eslint-config-nodemailer": "^1.2.0",
-        "grunt": "^1.0.2",
-        "grunt-eslint": "^20.1.0",
-        "nodemailer": "^4.6.3"
-    }
+  "name": "@unrealpixels/nodemailer-sendgrid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": "false",
+  "scripts": {
+    "test": "grunt",
+    "release": "release-it"
+  },
+  "keywords": [
+    "nodemailer",
+    "sendgrid"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0"
+  },
+  "devDependencies": {
+    "eslint-config-nodemailer": "^1.2.0",
+    "grunt": "^1.6.1",
+    "grunt-eslint": "^24.3.0",
+    "nodemailer": "^6.9.4",
+    "release-it": "^16.1.5"
+  }
 }

@@ -1,6 +1,6 @@
-# nodemailer-sendgrid
+# Unreal Pixels nodemailer-sendgrid
 
-SendGrid transport object for Nodemailer.
+SendGrid transport object for Nodemailer. This is a fork of the orginal to support updating the package and use by people needing the latest packages.
 
 ## Warning, vendor lock-in ahead!
 
@@ -15,20 +15,20 @@ switching from SendGrid API to any other provider should be just as easy as swit
 
 ## Usage
 
-> Requires Nodemailer v4.3.0+
+> Requires Nodemailer v6.9.0+
 
 This module is mostly meant to demonstrate the usage of `mail.normalize(cb)` method in Nodemailer v4.3. This allows creating HTTP API based transports for
 Nodemailer much easier.
 
 ### Install from NPM
 
-    npm install nodemailer nodemailer-sendgrid
+    npm install nodemailer @unrealpixels/nodemailer-sendgrid
 
 ### Create Nodemailer transport
 
 ```javascript
 const nodemailer = require('nodemailer');
-const nodemailerSendgrid = require('nodemailer-sendgrid');
+const nodemailerSendgrid = require('@unrealpixels/nodemailer-sendgrid');
 const transport = nodemailer.createTransport(
     nodemailerSendgrid({
         apiKey: process.env.SENDGRID_API_KEY

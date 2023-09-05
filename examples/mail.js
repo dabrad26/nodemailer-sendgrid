@@ -2,7 +2,7 @@
 'use strict';
 
 const nodemailer = require('nodemailer');
-const nodemailerSendgrid = require('../index'); // require('nodemailer-sendgrid');
+const nodemailerSendgrid = require('../index'); // require('@unrealpixels/nodemailer-sendgrid');
 const transport = nodemailer.createTransport(
     nodemailerSendgrid({
         apiKey: process.env.SENDGRID_API_KEY
@@ -11,8 +11,8 @@ const transport = nodemailer.createTransport(
 
 transport
     .sendMail({
-        from: 'andris@kreata.ee',
-        to: 'Andris Reinman <andris.reinman@gmail.com>, andris@ethereal.email',
+        from: 'test@example.com',
+        to: 'Example <example@example.com>',
         subject: 'hello world',
         html: '<h1>Hello world!</h1>'
     })
