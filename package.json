@@ -3,7 +3,6 @@
   "version": "1.0.3",
   "description": "",
   "main": "index.js",
-  "private": "false",
   "scripts": {
     "test": "grunt",
     "release": "release-it"
